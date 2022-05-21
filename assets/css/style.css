@@ -5,26 +5,37 @@
 }
 
 nav{
+
     grid-area: nav;
+    background-color: blue;
 
 }
 
 aside{
     grid-area: aside;
+    background-color: green;
+    
 }
 
 main{
-    grid-area: aside;
+    grid-area: main;
+    background-color: blueviolet;   
 }
 
 footer{
     grid-area: footer;
+    background-color: aquamarine;
 }
 
 
 
 .wrapper{
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-
+    width: 80vw;
+    height: 100vh;
+    margin: 0 auto;
+    grid-template-areas: 
+    "nav nav nav nav nav"
+    "aside main main main main"
+    "footer footer footer footer footer";
 }
