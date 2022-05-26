@@ -17,31 +17,68 @@ aside{
     
 }
 
-main{
-    grid-area: main;
-    background-color: #e7e7e7;  
+.item-container{
+    
 }
 
 footer{
     grid-area: footer;
-    background-color: #fff
+    background-color: #fff;
+    text-align: center;
+    
 }
 
 
 
 .wrapper{
     display: grid;
+    height: 100vh;
     grid-template:
-    "nav    nav" 10vh 
-    "aside   main" 80vh 
-    "footer  footer" 10vh /
-    15vh    auto;
+    "nav nav" 10vh   
+    "aside item-container" auto 
+    "footer footer" 10vh / 
+      10vw auto;
+
 }
 
-nav, footer{
+nav{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.item-container{
+    grid-area: item-container;
+    display: grid;
+    background-color: #e7e7e7;  
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.item-card{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.item-card img{
+    width: 100%;
+    
+}
+
+.item-name, .item-price{
+    background-color: #fff;
+}
+
+
+
+.card-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #25527b;
+
+
 }
 
 .categories{
@@ -52,9 +89,6 @@ nav, footer{
     margin: 1rem;
 
 }
-
-
-
 
 .categories h1{
     margin-bottom: 1rem;
