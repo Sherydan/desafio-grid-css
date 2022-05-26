@@ -8,27 +8,18 @@
 nav{
     grid-area: nav;
     background-color: #25527b;
-
 }
 
 aside{
     grid-area: aside;
     background-color: #e7e7e7;
-    
-}
-
-.item-container{
-    
 }
 
 footer{
     grid-area: footer;
     background-color: #fff;
     text-align: center;
-    
 }
-
-
 
 .wrapper{
     display: grid;
@@ -37,8 +28,7 @@ footer{
     "nav nav" 10vh   
     "aside item-container" auto 
     "footer footer" 10vh / 
-      10vw auto;
-
+    10vw auto;
 }
 
 nav{
@@ -58,24 +48,40 @@ nav{
     margin: 1rem;
     display: flex;
     flex-direction: column;
-    
+    width: 80%;
 }
 
 .item-card img{
     width: 100%;
-    
 }
 
 .item-name, .item-price{
     background-color: #fff;
+    text-align: center;
+}
+
+.item-name{
+    font-weight: bold;
+    padding-bottom: 0.8rem;
+}
+
+.item-price{
+    padding-bottom: 0.8rem;
 }
 
 .card-button{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 2.5rem;
+    color: #fff;
     background-color: #25527b;
+    cursor: pointer;
+    user-select: none;
+}
 
+.card-button:hover{
+    background-color: #214261;
 }
 
 .categories{
@@ -84,7 +90,6 @@ nav{
     align-content: space-between;
     margin-left: 1rem;
     margin: 1rem;
-
 }
 
 .categories h1{
