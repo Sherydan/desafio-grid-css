@@ -31,11 +31,9 @@ footer{
 
 .wrapper{
     display: grid;
-    width: 80vw;
-    height: 100vh;
-    margin: 0 auto;
-    grid-template-areas: 
-    "nav nav nav nav nav"
-    "aside main main main main"
-    "footer footer footer footer footer";
+    grid-template:
+    "nav    nav" 10vh 
+    "aside   main" 80vh 
+    "footer  footer" 10vh /
+    15vh    auto;
 }
