@@ -3,11 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav{
     grid-area: nav;
     background-color: #25527b;
+    color: #fff;
 }
 
 aside{
@@ -16,9 +18,12 @@ aside{
 }
 
 footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-area: footer;
     background-color: #fff;
-    text-align: center;
+    
 }
 
 .wrapper{
