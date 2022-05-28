@@ -34,10 +34,13 @@ footer{
 .wrapper{
     display: grid;
     height: 100vh;
+    /* shorthand to write grid-template-colums and grid-template-rows in one line */
     grid-template:
-    "nav nav" 10vh   
+    /* areas placement and his heigth */
+    "nav nav" 10vh  
     "aside item-container" auto 
     "footer footer" 10vh / 
+    /* size for every column (width) */
     10vw auto;
 }
 
@@ -111,13 +114,15 @@ nav{
 }
 
 .item-quantity{
-    color: rgb(207, 208, 209);
+    color: rgb(178, 180, 182);
 }
 
+/* media querys */
 @media only screen and (max-width: 1100px) {
     .item-container{
         grid-template-columns: 1fr 1fr
     }
+
 }
 
 @media only screen and (max-width: 750px) {
@@ -126,3 +131,4 @@ nav{
     }
     
 }
+
